@@ -4,8 +4,8 @@ end
 
 source 'https://supermarket.chef.io'
 
-depends 'runit', '>= 1.7'
-depends 'dpkg_autostart'
+cookbook 'runit', '>= 1.7'
+cookbook 'dpkg_autostart'
 
 group :integration do
   cookbook 'java'
